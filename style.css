@@ -1,0 +1,41 @@
+#myDiv {
+  -webkit-transform: rotateY(130deg); /* Safari */
+  transform: rotateY(130deg);
+}
+
+@keyframes example {
+  0% {
+    -webkit-transform: rotateY(0deg); /* Safari */
+    transform: rotateY(0deg);
+  }
+  25% {
+    -webkit-transform: rotateY(130deg); /* Safari */
+    transform: rotateY(130deg);
+  }
+  50% {
+    -webkit-transform: rotateY(0deg); /* Safari */
+    transform: rotateY(0deg);
+  }
+  75% {
+    -webkit-transform: rotateY(-130deg); /* Safari */
+    transform: rotateY(-130deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg); /* Safari */
+    transform: rotateY(0deg);
+  }
+}
+
+/* The element to apply the animation to */
+h1 {
+  width: 20px;
+  height: 100px;
+  animation-name: example;
+  animation-duration: 4s;
+  text-align: center;
+  float: left;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-transform: rotateY(0deg); /* Safari */
+  transform: rotateY(0deg);
+}
